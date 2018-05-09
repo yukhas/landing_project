@@ -8,7 +8,9 @@ export default {
     components: {
         HeaderApp: Header,
         Switcher: Switcher,
-        Program: Program,
-        ButtonStartStudy: ButtonStartStudy
+        Program: Program
+        // ButtonStartStudy: ButtonStartStudy
+        // FormatOfStudy: FormatOfStudy,
+        // FullstackDevelop: FullstackDevelop
     }
 }

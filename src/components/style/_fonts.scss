@@ -1,12 +1,22 @@
 @font-face{
     font-family: 'MuseoSansCyrl';
-    src: url('../../font/MuseoSansCyrl900.ttf') format(ttf);
+    src: url('../../font/MuseoSansCyrl900.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 @font-face{
     font-family: 'UbuntuMono';
-    src: url('../../font/UbuntuMono-B.ttf') format(ttf);
+    src: url('../../font/UbuntuMono-B.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Proxima Nova Thin';
+    src: url('../../font/ProximaNovaT-Thin.eot');
+    src: url('../../font/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../../font/ProximaNovaT-Thin.woff') format('woff'),
+    url('../../font/ProximaNovaT-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    // @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&subset=cyrillic');

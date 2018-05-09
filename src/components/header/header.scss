@@ -1,61 +1,232 @@
-.header {
+// @font-face{
+//     font-family: 'UbuntuMono';
+//     src: url('../../font/UbuntuMono-B.ttf') format(truetype);
+//     font-weight: bold;
+//     font-style: normal;
+// }
+@font-face{
+        font-family: 'MuseoSansCyrl';
+        src: url('../../font/MuseoSansCyrl900.ttf') format(truetype);
+        font-weight: bold;
+        font-style: normal;
+    }
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&subset=cyrillic');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.header {
+ 
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     width: 100%;
     height: 550px;
     background-color: #2b2a2f;
-    margin: 0 auto;
     padding: 31px 15px 68px;
+
+    @media screen and (min-width:767px) {
+        max-width: 768px;
+    }
 
     &__logo {
         margin: 5px 0 0 0;
         display: inline-block;
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+        max-height: 29px;
+
+        @media screen and (min-width: 767px){
+            max-width: 79px;
+            max-height: 23px;
+        }
     }
 
     .headerPhone{
 
-        width: 139px;
-        ._38__093__343_21_27 {
-            font-size: 14px;
-            font-family: "UbuntuMono";
-            color: rgb(0, 188, 212);
-            font-weight: bold;
-            line-height: 1.429;
-            text-align: left;
-            position: absolute;
-            left: 165.103px;
-            top: 44.247px;
-            z-index: 1413;
-          }
+        // width: 320px;
+        height: 43px;
+        margin-left: auto;
           
         &__phone {
-            font-family: 'UbuntuMono';
+            font-family: 'UbuntuMono', 'Ubuntu Mono', monospace;
             font-size: 14px;
             font-weight: bold;
             color: rgb(0, 188, 212);
             line-height: 1.429;
             height: 38px;
             width: 138px;
+            // text-align: left;
         }
     
         &__line{
             width: 135px;
             height: 1px;
-            background-color: #00bcd4;
+            background-color: rgb(0, 188, 212);
         }
 
         &__text{
-            font-family: 'ProximaNova';
+            font-family: 'ProximaNova','Proxima Nova Thin';
             font-weight: 400;
             font-size: 13px;
             color: rgb(199, 199, 199);
             line-height: 1.538;
+            // text-align: left;
 
-            &-xbold{
+            &--xbold{
                 font-weight: 800;
             }
         }
          
     }
-}
 
+    .startDate{
+        border: 1px solid rgb(0, 188, 212);
+        width: 139px;
+        height: 26px;
+        margin: 31px auto 0;
+
+        &__text{
+            font-size: 14.44px;
+            font-family: "MuseoSansCyrl";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 1.836;
+            text-align: center;
+            -moz-transform: matrix( 0.99962333710792,0,0,0.96951091585601,0,0);
+            -webkit-transform: matrix( 0.99962333710792,0,0,0.96951091585601,0,0);
+            -ms-transform: matrix( 0.99962333710792,0,0,0.96951091585601,0,0);
+            transform: matrix( 0.99962333710792,0,0,0.96951091585601,0,0);
+            font-weight: 700;              
+            
+            &--color{
+                color: rgb(0, 188, 212);
+            }
+        }
+    }
+
+    .startFullStack{
+
+        width: 100%;
+
+        .startInIt{
+            text-align: center;
+
+            &__uppertext{
+                font-size: 18px;
+                font-family: "UbuntuMono", 'Ubuntu Mono', monospace;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 2.222;
+                // text-align: center;
+            }
+
+            &__text{
+                    font-size: 16px;
+                    font-family: "ProximaNova";
+                    color: rgb(196, 196, 196);
+                    line-height: 1.875;
+                    // text-align: right;                  
+            }
+        }
+        
+        .startFullStack__line{
+            background-color: rgb(0, 188, 212);
+            width: 150px;
+            height: 3px;
+            margin: 0 auto;       
+        }
+
+        .fullStackZero{
+
+            width: 245px;
+            height: 102px;
+            margin: 0 auto; 
+
+            &__text{
+
+                font-size: 30px;
+                font-family: "MuseoSansCyrl";
+                text-transform: uppercase;
+                line-height: 1.333;
+                text-align: center;
+                color: rgb(255, 255, 255);
+
+                &--color{
+                    color: rgb(0, 188, 212);
+                }
+
+            }
+        }
+    }
+
+    .juniorWorks{
+
+        margin: 0 auto;
+        text-align: center;
+
+        .juniorWorks__line{
+
+                background-color: rgb(0, 188, 212);
+                width: 120px;
+                height: 1px;
+                margin: 0 auto;
+
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+        }
+
+        &__text{
+
+            display: inline-block;
+            width: 100%;
+            // max-width: 217px;
+            // height: 33px;
+            font-size: 14px;
+            font-family: "MuseoSansCyrl";
+            color: rgb(255, 255, 255);
+            line-height: 1.429;
+            margin: 0 auto;
+
+            &--bold{
+
+                color: rgb(255, 255, 255);
+                font-weight: 700;
+
+            }
+        }
+        
+        .graduateToIt{
+
+            font-size: 18px;
+            font-family: "UbuntuMono", 'Ubuntu Mono', monospace;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1;
+            text-align: center;
+            width: 225px;
+            // height: 31px;  
+            margin: 21px auto 0;
+
+            &--color{
+                color: rgb(0, 188, 212);
+            }
+                  
+        }
+
+    }
+
+    .resumePortfolio{
+
+        @media screen and(max-width: 767px) {
+            display: none;
+        }
+
+
+
+    }
+}
