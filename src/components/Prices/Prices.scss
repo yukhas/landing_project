@@ -1,49 +1,110 @@
 
-/* @font-face {
-    src: 
-} */
-
 .prices {
-  /*  background-image: url(~/src/assets/prices_images/prices_background.jpg);
-   background-repeat: space; */
-   /* background-color: yellow; */
    background: url(../../assets/prices_images/prices_background.png) repeat;
    color: #fff;
-   h2 {
-       font-size: 25px;
-       font-family: 'Museo Sans Cyrl 900', sans-serif;
-       text-align: center;
-       width: 91.625%;
-       margin: 0 auto;
+   padding: 0;
+   margin-top: -20px;
+   .wrapper {
+       padding: 5%;
+       h2 {
+          text-align: center;
+          margin-top: 60px;
+          margin: 0 auto;
+          font-size: 25px;
+          font-family: 'MuseoSansCyrl 900'; 
+       }
+       .iris-blue {
+            color: #00bcd4;
+        }
+        hr {
+            width: 150px;
+        }
+        .start-learning {
+            width: 197px;
+            text-align: center;
+            font-size: 14px;
+            font-family: 'MuseoSansCyrl 900';
+            margin: 0 auto;
+        }
+        .important-text {
+            font-family: 'OpenSans ExtraBold';
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .grey-block {
+            font-size: 16px;
+            font-family: 'MuseoSansCyrl 900';
+            text-align: center;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #696969;
+        }
+        .full-stack-online {
+            margin-top: 20px;
+            .full-stack-online-body {
+                background-color: #333333;
+                .full-stack-online-body-text {
+                    padding-top: 20px;
+                    p {
+                        margin-top: 0;
+                        text-align: center;
+                    }
+                }
+                .full-stack-online-body-final {
+                    font-weight: bold;
+                    font-size: 14px;
+                    font-family: 'OpenSans ExtraBold';
+                    text-align: center;
+                }
+                .career-title {
+                    text-align: center;
+                }
+                .career-items ul {
+                    padding-left: 0;
+                }
+                .career-items li {
+                    background-color: #222222;
+                    list-style-type: none;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    padding-left: 20px;
+                    margin: 10px;
+                    text-align: left;
+                    font-size: 14px;
+                    font-family: 'UbuntuMono';
+                }
+                .online-price {
+                    color: #ffc600;
+                    font-size: 36px;
+                    font-family: 'Museo Sans Cyrl 900';
+                    text-align: center;
+                }
+                .offline-price {
+                    color: #5cc497;
+                    font-size: 36px;
+                    font-family: 'Museo Sans Cyrl 900';
+                    text-align: center;
+                }
+            }
+        }
+        .payment-type-title {
+            font-family: 'OpenSans Bold';
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .payment-type-body ul {
+            padding-left: 0;
+        }
+        .payment-type-body li {
+            list-style-type: none;
+            text-align: center;
+            background-color: #333333;
+        }
+        .payment-type-body li p {
+            margin: 1px;
+        }
    }
-   hr {
-       width: 60%;
-   }
-   h3 {
-       text-align: center;
-       font-size: 14px;
-       font-family: 'Museo Sans Cyrl 900', sans-serif;
-   }
-   .prices-garantee {
-       text-align: left;
-       font-family: 'Open Sans Regular', sans-serif;
-   }
-   .grey-block {
-       font-family: 'Museo Sans Cyrl 900', sans-serif;
-       text-align: center;
-       background-color: grey;
-   }
-   .online-price {
-       color: #ffc600;
-       font-size: 36px;
-       font-family: 'Museo Sans Cyrl 900', sans-serif;
-       text-align: center;
-   }
-}
-
-.iris-blue {
-       color: #00bcd4;
-   }
-
-
-
+} 
