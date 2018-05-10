@@ -5,5 +5,5 @@
 <script src="./App.js">
 </script>
 
-<style scoped src="./App.scss">
+<style scoped src="./App.scss" lang="scss">
 </style>
