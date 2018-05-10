@@ -5,3 +5,25 @@
     box-sizing: border-box;
     margin: 0;
   }
+
+  .fullstackDevelop{
+
+    width: 100%;
+    max-width: 320px;
+
+    .componentHeader{
+
+        font-size: 25px;
+        font-family: "MuseoSansCyrl";
+        color: rgb(109, 181, 186);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        width: 262px;
+        height: 141px;
+        
+    }
+      
+      
+
+  }
