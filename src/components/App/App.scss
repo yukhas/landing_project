@@ -1,2 +1,8 @@
 @import '../style/_main.scss';
 @import '../style/_variables.scss';
+/* @import '../../fonts.scss' */
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
